@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.wrapper{
+	display: flex;
+	height: 100vh;
+	position: relative;
+
+}
+
+.main{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/city/49d5f9db2b0b8ac3d96fc58a941f047e.jpg);
+	background-size: cover;
+	z-index: 3;
+	&__title{
+		color: #fff;
+		font-size: 53px;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+}
+
+.overlay{
+	width: 1%;
+	height: 100%;
+	position: relative;
+	z-index: 4;
+	background: url(../img/city/paseo-helicoptero-excursion-nueva-york.jpg) no-repeat center;
+	background-size: ;
+	background-attachment: fixed;
+	transition: 2.0s linear;
+	&:hover{
+		opacity: 0;
+		transition: 0s linear;
+	}
+}
